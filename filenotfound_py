@@ -1,0 +1,28 @@
+filename = input("Enter the filename: ")
+ 
+try:
+
+    number = int(input("Enter a number: "))
+ 
+    file = open(filename, "r")
+ 
+    print("File content:")
+
+    print(file.read())
+ 
+    print("Your number is:", number)
+ 
+    file.close()
+ 
+except FileNotFoundError:
+
+    print("File does not exist.")
+ 
+except ValueError:
+
+    print("Invalid input! Please enter a valid number.")
+ 
+except Exception as e:
+
+    print("An unexpected error occurred:", e)
+ 

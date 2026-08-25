@@ -1,0 +1,6 @@
+file=open("hello.txt","w")
+file.write("Hello python")
+file.close()
+file=open("hello.txt","r")
+content=file.read()
+print(content)
